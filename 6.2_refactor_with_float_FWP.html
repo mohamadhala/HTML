@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css" type="text/css">
+    <title>mohamad halwani personal site</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>Button Example</title>
+    <style>
+        #header 
+        {
+            background-color: #eceef7d1;
+            padding: 10px;
+        }
+        .custom-button 
+        {
+          background-color: rgb(59, 173, 226);
+          color: white;
+          padding: 10px 20px;
+          border: none;
+          border-radius: 4px;
+          cursor: pointer ;
+
+        }
+        .myName
+        {
+            color: rgb(4, 87, 255);
+        }
+        .instagram
+        {
+            color: rgb(193, 34, 193);
+        }
+        .container 
+        {
+            overflow: hidden; /* Clears the floats */
+        }
+
+        .float-left 
+        {
+            float: left;
+        }
+
+        .float-right 
+        {
+            float: right;
+        }
+
+        .clear 
+        {
+            clear: both; /* Clears the floats */
+        }
+        .custom-button:hover
+        {
+            color: rgb(8, 0, 255);
+        }
+        </style>
+</head>
+<body>
+    <!-- using the span for coloring a specific word"my name" -->
+    <h1><em>Hi there ! My name is </em><span class="myName">Mohamad Halawani</span></h1><br>
+    <!-- using the padding inline -->
+    <h2>I am a <ins style="padding: 10px;"> Programmer </ins></h2><br>
+    <img src="1.jpg" width="150" height="150"><br>
+    <p>I enjoy playing video games , reading books , cooking and eating ofc! </p>
+    
+    <!-- using the ID with the # -->
+    <div id="header">
+        <strong>Follow me!</strong><br>
+        <a href="https://www.facebook.com/profile.php?id=100000533317991" target="_blank"><i class="fa fa-facebook"></i></a>
+        This is my <a href="https://www.facebook.com/profile.php?id=100000533317991" target="_blank"><span class="myName">Facebook</span></a> Page <br>
+        <a href="https://www.instagram.com/mohamadhala97/" target="_blank"> <i class="fa fa-instagram"></i></a>
+        This is my <a href="https://www.instagram.com/mohamadhala97/" target="_blank"><span class="instagram">Instagram </span></a>page <br>
+    </div><br>
+
+    <button id="myButton" class="custom-button" onclick="alert('Button clicked!')">Click Me!</button><br><br>
+    
+<!-- using the left and right floats  -->
+    <div class="container">
+        <div class="float-left">Look at the Right side</div>
+        <div class="float-right">Look at the Left side</div>
+        <div class="clear"></div>
+      </div>
+</body>
+</html>
