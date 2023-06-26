@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition</title>
+    <style>
+        .shape > div
+        {
+            width: 20%;
+            height: 90%;
+            background-color: rgb(186, 186, 186);
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 30px;
+            margin-top: 5%;
+            margin-left: 5%;
+            border: solid black 2px;
+        }
+        .hover-content 
+        {
+            width: 100%;
+            height: 100%;
+            background-color: rgba(255, 6, 6, 0.7);
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+        }
+      
+        .shape:hover .hover-content 
+        {
+            transform: translateY(100%);
+        }
+    </style>
+    
+</head>
+<body>
+    <div class="shape">
+        <div class="hover-content"> Button</div>
+    </div>
+</body>
+</html>
